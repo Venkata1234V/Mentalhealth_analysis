@@ -44,7 +44,7 @@ user_input_transformed = bow.transform([user_input])
 prediction = model.predict(user_input_transformed)[0]
     
     # Display the result
-st.write(f"The predicted mental health status is: {prediction}")
+#st.write(f"The predicted mental health status is: {prediction}")
 
 if st.button("Submit"):
     if prediction == "Normal":
