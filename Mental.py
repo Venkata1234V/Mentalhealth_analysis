@@ -48,25 +48,23 @@ prediction = model.predict(user_input_transformed)[0]
 
 if st.button("Submit"):
     if prediction == "Normal":
+        st.write(f"The predicted mental health status is : {prediction}")
         st.image(r"normal.png")
     if prediction == "Stress":
-        st.write(f"The predicted mental health status is : {status_labels[prediction]}")
+        st.write(f"The predicted mental health status is : {prediction}")
         st.image(r"stress.jpeg")
     if prediction == "Depression":
-       # st.write(f"The predicted mental health status is : {status_labels[prediction]}")
+        st.write(f"The predicted mental health status is : {prediction}")
         st.image(r"d.jpeg")
     if prediction == "Anxiety":
-        #st.write(f"The predicted mental health status is : {status_labels[prediction]}")
+        st.write(f"The predicted mental health status is : {prediction}")
         st.image(r"images.jpeg")
     if prediction == "Bipolar":
-        #st.write(f"The predicted mental health status is : {status_labels[prediction]}")
+        st.write(f"The predicted mental health status is : {prediction}")
         st.image(r"Bipolar.jpeg")
     if prediction == "Personality disorder":
-        #st.write(f"The predicted mental health status is : {status_labels[prediction]}")
+        st.write(f"The predicted mental health status is : {prediction}")
         st.image(r"personal.jpeg")
     if prediction == "Suicidal":
-        #st.write(f"The predicted mental health status is : {status_labels[prediction]}")
+        st.write(f"The predicted mental health status is : {prediction}")
         st.image(r"suicida.jpeg")
-
-
-
